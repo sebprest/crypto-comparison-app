@@ -1,0 +1,11 @@
+{
+  "name": "crypto-comparison-app",
+  "version": "0.0.0",
+  "description": "An interface for easily comparing historical price action for digital assets",
+  "private": true,
+  "scripts": {
+  },
+  "repository": "github:sebprest/crypto-comparison-app",
+  "author": "sebprest",
+  "license": "MIT"
+}
