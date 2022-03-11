@@ -1,0 +1,8 @@
+# Coverage
+/coverage/*
+
+# Build output
+/dist/*
+
+# Node modules
+/node_modules/*
