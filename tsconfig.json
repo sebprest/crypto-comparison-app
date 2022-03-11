@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "allowJs": false,
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "target": "es6",
+    "baseUrl": "./",
+    "paths": {
+      "^*": ["./src/ts*"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": ["./src/"]
+}
