@@ -1,7 +1,13 @@
-import { ReactNode } from '@types/react'
+import Flex from './Layout/Flex'
+import TokenList from './TokenList'
 
-const App = (): ReactNode => {
-  return <h1>Hello world</h1>
+const App = (): JSX.Element => {
+  return (
+    <Flex direction='row' justifyContent='center'>
+      <div>Chart</div>
+      <TokenList />
+    </Flex>
+  )
 }
 
 export default App
