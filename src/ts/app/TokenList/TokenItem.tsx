@@ -7,13 +7,20 @@ interface Props {
 }
 
 const TokenItem: React.FC<Props> = ({ token }) => {
+  const formatPrice = (price: number): string => {
+    return new Intl.NumberFormat('en-US', {
+      currency: 'USD',
+      style: 'currency'
+    }).format(price)
+  }
+
   return (
     <Container direction='row' justifyContent='space-between'>
       <Flex direction='row'>
         <Image src={token.image} />
         <span>{token.name}</span>
       </Flex>
-      <span>${token.current_price}</span>
+      <span>{formatPrice(token.current_price)}</span>
     </Container>
   )
 }
