@@ -26,6 +26,7 @@ const TokenItem: React.FC<Props> = ({ token }) => {
 }
 
 const Container = styled(Flex)`
+  cursor: pointer;
   padding: 4px;
 
   &:nth-child(even) {
