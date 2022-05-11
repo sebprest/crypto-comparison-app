@@ -1,3 +1,4 @@
+import styled from 'styled-components'
 import { useTokensList } from '^/state/tokens'
 import TokenItem from './TokenItem'
 
@@ -13,14 +14,19 @@ const TokenList = (): JSX.Element | null => {
   }
 
   return (
-    <div>
+    <Container>
       {tokens.map(token => {
         return (
           <TokenItem key={token.id} token={token} />
         )
       })}
-    </div>
+    </Container>
   )
 }
+
+const Container = styled.div`
+  max-height: 512px;
+  overflow: scroll;
+`
 
 export default TokenList
