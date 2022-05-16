@@ -1,10 +1,4 @@
-export interface Token {
-  id: string
-  symbol: string
-  name: string
-  current_price: number
-  image: string
-}
+import { Token } from '^/state/types'
 
 export interface TokensList {
   tokens?: Token[]

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { useAppSelector } from '^/state/hooks'
 import { selectSelectedTokens } from '^/state/selectedTokens'
 import { useTokensList } from '^/state/tokensList'
-import { Token } from '^/state/tokensList/types'
+import { Token } from '^/state/types'
 import TokenItem from './TokenItem'
 
 const TokenList = (): JSX.Element | null => {

@@ -1,5 +1,6 @@
 import useSWR from 'swr'
-import { Token, TokensList } from './types'
+import { Token } from '^/state/types'
+import { TokensList } from './types'
 
 const API_ROOT = 'https://api.coingecko.com/api/v3'
 

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Flex from '^/app/Layout/Flex'
 import { useAppDispatch } from '^/state/hooks'
 import { toggleToken } from '^/state/selectedTokens'
-import { Token } from '^/state/tokensList/types'
+import { Token } from '^/state/types'
 
 interface Props {
   token: Token
