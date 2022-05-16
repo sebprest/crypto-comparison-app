@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import { useAppSelector } from '^/state/hooks'
 import { selectSelectedTokens } from '^/state/selectedTokens'
-import { useTokensList } from '^/state/tokens'
-import { Token } from '^/state/tokens/types'
+import { useTokensList } from '^/state/tokensList'
+import { Token } from '^/state/tokensList/types'
 import TokenItem from './TokenItem'
 
 const TokenList = (): JSX.Element | null => {

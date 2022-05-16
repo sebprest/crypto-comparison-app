@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
 import type { RootState } from '^/state'
-import { Token } from '^/state/tokens/types'
+import { Token } from '^/state/tokensList/types'
 
 interface SelectedTokensState {
   selectedTokens: Token[]
