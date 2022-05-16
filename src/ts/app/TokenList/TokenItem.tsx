@@ -53,6 +53,7 @@ const Container = styled(Flex)<{selected: boolean}>`
 
 const Image = styled.img`
   max-width: 20px;
+  max-height: 20px;
   margin-right: 4px;
 `
 
