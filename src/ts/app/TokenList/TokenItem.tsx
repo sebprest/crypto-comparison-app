@@ -36,7 +36,7 @@ const TokenItem: React.FC<Props> = ({ token, selected }) => {
   )
 }
 
-const Container = styled(Flex)<{selected: boolean}>`
+const Container = styled(Flex)<{ selected: boolean }>`
   cursor: pointer;
   padding: 4px;
 
