@@ -10,7 +10,7 @@ const TokenList = (): JSX.Element | null => {
   const { selectedTokens } = useAppSelector(selectSelectedTokens)
 
   const tokenSelected = (token: Token): boolean => {
-    return selectedTokens.includes(token)
+    return selectedTokens.includes(token.id)
   }
 
   if (isLoading) {

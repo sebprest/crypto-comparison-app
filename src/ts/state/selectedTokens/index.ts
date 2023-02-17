@@ -1,10 +1,10 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
 import type { RootState } from '^/state'
-import { Token } from '^/state/types'
+import { TokenId } from '^/state/types'
 
 interface SelectedTokensState {
-  selectedTokens: Token[]
+  selectedTokens: TokenId[]
 }
 
 const initialState: SelectedTokensState = {
@@ -15,8 +15,14 @@ export const selectedTokensSlice = createSlice({
   name: 'selectedTokens',
   initialState,
   reducers: {
-    toggleToken: (state, action: PayloadAction<Token>) => {
-      state.selectedTokens = state.selectedTokens.concat(action.payload)
+    toggleToken: (state, action: PayloadAction<TokenId>) => {
+      const selectedToken = action.payload
+
+      if (state.selectedTokens.includes(selectedToken)) {
+        state.selectedTokens.splice(state.selectedTokens.indexOf(selectedToken), 1)
+      } else {
+        state.selectedTokens = state.selectedTokens.concat(selectedToken)
+      }
     }
   }
 })

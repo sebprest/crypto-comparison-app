@@ -22,7 +22,7 @@ const TokenItem: React.FC<Props> = ({ token, selected }) => {
 
   const handleTokenClick = (event: MouseEvent<HTMLDivElement>): void => {
     event.preventDefault()
-    dispatch(toggleToken(token))
+    dispatch(toggleToken(token.id))
   }
 
   return (

@@ -1,5 +1,7 @@
+export type TokenId = string
+
 export interface Token {
-  id: string
+  id: TokenId
   symbol: string
   name: string
   current_price: number
