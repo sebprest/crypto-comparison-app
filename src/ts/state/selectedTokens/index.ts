@@ -19,7 +19,7 @@ export const selectedTokensSlice = createSlice({
       const selectedToken = action.payload
 
       if (state.selectedTokens.includes(selectedToken)) {
-        state.selectedTokens.splice(state.selectedTokens.indexOf(selectedToken), 1)
+        state.selectedTokens = state.selectedTokens.filter(token => token !== selectedToken)
       } else {
         state.selectedTokens = state.selectedTokens.concat(selectedToken)
       }
