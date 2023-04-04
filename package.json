@@ -13,6 +13,7 @@
   "author": "sebprest",
   "license": "MIT",
   "devDependencies": {
+    "@types/md5": "^2.3.2",
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.13",
     "@types/styled-components": "^5.1.24",
@@ -26,7 +27,10 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
+    "chart.js": "^4.2.1",
+    "md5": "^2.3.0",
     "react": "^17.0.2",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^17.0.2",
     "react-redux": "^8.0.1",
     "styled-components": "^5.3.5",
