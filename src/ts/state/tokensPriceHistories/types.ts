@@ -1,12 +1,12 @@
 export interface fetchedTokenPriceData {
-  market_caps: Array<Record<string, string>>
-  prices: Array<Record<string, string>>
-  total_volume: Array<Record<string, string>>
+  market_caps: Array<Record<number, number>>
+  prices: Array<Record<number, number>>
+  total_volume: Array<Record<number, number>>
 }
 
 export interface TokenPriceHistory {
   tokenId: string
-  priceHistory: Array<Record<string, string>>
+  priceHistory: Array<Record<number, number>>
 }
 
 export interface TokensPriceHistories {
